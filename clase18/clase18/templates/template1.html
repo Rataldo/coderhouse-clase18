@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primer template</title>
+</head>
+<body>
+    <p>aqui probando mi primer template</p>
+    <br>
+    <br>
+    <p>prueba de diccionario</p>
+    <br>
+    <p style="color: red;">mi nombre es: {{nombre}} </p>
+    <br>
+    <p style="color: blue;">mi apellido es: {{apellido}} </p>
+    <br>
+    <h1>el dia de creacion de este template es: {{hoy}}</h1>
+    <br>
+    <h3>Estas son mis notas de la universidad</h3>
+    <p>
+    {% for n in notas %}
+        {% if n < 4 %}
+            <p style="color: red;">NOTA MALA {{n}}</p>
+        {% else %}
+            <p style="color: blue;">NOTA BUENA {{n}}</p>
+        {% endif %}
+    {% endfor %}
+    </p>
+    
+</body>
+</html>
