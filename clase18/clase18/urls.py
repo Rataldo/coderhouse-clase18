@@ -18,9 +18,11 @@ from django.contrib import admin
 from django.urls import path
 from clase18.views import saludo, segunda_vista, template1
 
+
 urlpatterns = [
     path("admin/", admin.site.urls),
     path("saludo", saludo),
     path("segundavista",segunda_vista),
     path("template", template1),
+    
 ]
